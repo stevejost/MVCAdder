@@ -1,0 +1,22 @@
+﻿@model SecondResultsViewModel
+
+<div>
+    <h1>Calculation Results</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Operation</th>
+                <th>Value</th>
+            </tr>
+        </thead>        
+        <tbody>
+            <tr><td>Sum</td><td>@Model.Sum</td></tr>
+            <tr><td>Difference</td><td>@Model.Difference</td></tr>
+            <tr><td>Product</td><td>@Model.Product</td></tr>
+            <tr><td>Quotient</td><td>@Model.Quotient</td></tr>
+            <tr><td>Divident</td><td>@Model.Remainder</td></tr>            
+        </tbody>
+    </table>
+
+    <a asp-action="Index">Start Over</a>
+</div>

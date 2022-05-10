@@ -1,0 +1,40 @@
+﻿@model InputFormModel
+
+<div>
+    <h1>Variation 1</h1>
+    <form asp-action="PostFirst" asp-controller="Adder">
+        @Html.LabelFor(m=>m.X)
+        @Html.TextBoxFor(m=>m.X)
+
+        @Html.LabelFor(m=>m.Y)
+        @Html.TextBoxFor(m=>m.Y)
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div>
+    <h1>Variation 2</h1>
+    <form asp-action="PostSecond" asp-controller="Adder">
+        @Html.LabelFor(m=>m.X)
+        @Html.TextBoxFor(m=>m.X)
+
+        @Html.LabelFor(m=>m.Y)
+        @Html.TextBoxFor(m=>m.Y)
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div>
+    <h1>Variation 3</h1>
+    <form asp-action="PostThird" asp-controller="Adder">
+        @Html.LabelFor(m=>m.X)
+        @Html.TextBoxFor(m=>m.X)
+
+        @Html.LabelFor(m=>m.Y)
+        @Html.TextBoxFor(m=>m.Y)
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
